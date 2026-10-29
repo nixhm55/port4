@@ -46,7 +46,7 @@ export default function Navigation() {
     <header className={`nav ${hidden ? 'nav--hidden' : ''} ${atTop ? 'nav--top' : 'nav--scrolled'} ${menuOpen ? 'nav--menu-open' : ''}`}>
       <div className="nav__inner">
         <a href="#home" className="nav__logo" onClick={(e) => handleNavClick(e, '#home')}>
-          Yasmi
+          Nisam
         </a>
         <nav className="nav__links" aria-label="Primary">
           {navLinks.map((link) => (

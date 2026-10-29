@@ -165,7 +165,7 @@ export default function Projects() {
             </span>
             <h3 id="project-modal-title" className="modal__title">{active.title}</h3>
             <p id="project-modal-description" className="modal__desc">{active.description}</p>
-            <p className="modal__disclaimer">This is placeholder demonstration content for the Yasmi template.</p>
+            <p className="modal__disclaimer">This is placeholder demonstration content for the Nisam template.</p>
           </div>
         </div>
       )}

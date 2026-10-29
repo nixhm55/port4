@@ -10,7 +10,7 @@ export const heroContent = {
   label: 'Creative Developer — available for select projects',
   headlineLines: ['Designing', 'motion that', 'means something.'],
   intro:
-    'Yasmi is a creative developer shaping digital experiences where typography, motion, and space move as one. This portfolio is a demonstration build — all content is editable.',
+    'Nisam is a creative developer shaping digital experiences where typography, motion, and space move as one. This portfolio is a demonstration build — all content is editable.',
 };
 
 export const introStatement =
@@ -20,8 +20,8 @@ export const aboutContent = {
   label: '01 — About',
   heading: 'A practice built on restraint and rhythm.',
   paragraphs: [
-    'Yasmi approaches every project as a study in balance — between structure and spontaneity, stillness and motion, silence and detail.',
-    'This is demonstration content for the Yasmi portfolio template. Replace with real biography, practice notes, or studio information.',
+    'Nisam approaches every project as a study in balance — between structure and spontaneity, stillness and motion, silence and detail.',
+    'This is demonstration content for the Nisam portfolio template. Replace with real biography, practice notes, or studio information.',
   ],
   facts: [
     { label: 'Focus', value: 'Interface & motion design' },
@@ -116,7 +116,7 @@ export const milestones = [
 
 export const contactContent = {
   heading: "Let's build something quietly ambitious.",
-  email: 'hello@yasmi.studio',
+  email: 'hello@Nisam.studio',
   socials: [
     { label: 'Instagram', href: 'https://instagram.com' },
     { label: 'LinkedIn', href: 'https://linkedin.com' },

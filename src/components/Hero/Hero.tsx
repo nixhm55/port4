@@ -59,7 +59,7 @@ export default function Hero() {
   return (
     <section id="home" className="hero" ref={rootRef}>
       <span className="hero__bg-word" aria-hidden="true">
-        YASMI
+        Nisam
       </span>
       <div className="hero__inner">
         <p className="hero__label">{heroContent.label}</p>

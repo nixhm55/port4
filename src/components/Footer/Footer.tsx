@@ -7,12 +7,12 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner">
-        <span className="footer__wordmark">Yasmi</span>
+        <span className="footer__wordmark">Nisam</span>
         <button className="footer__top" onClick={scrollTop} aria-label="Back to top">
           <span>Back to top</span>
           <span className="footer__arrow">↑</span>
         </button>
-        <span className="footer__meta">© {year} Yasmi — Demonstration portfolio template</span>
+        <span className="footer__meta">© {year} Nisam — Demonstration portfolio template</span>
       </div>
     </footer>
   );
