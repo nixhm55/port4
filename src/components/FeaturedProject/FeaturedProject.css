@@ -1,0 +1,121 @@
+.featured {
+  position: relative;
+  background: var(--color-dark);
+  color: var(--color-dark-ink);
+  min-height: 300vh;
+}
+
+.featured__sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: clamp(32px, 6vw, 100px);
+  padding: 0 var(--gutter);
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.featured__media {
+  flex: 1 1 50%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 12px;
+  max-width: 520px;
+}
+
+.featured__media-inner {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(150deg, #44433d, #201f1b 60%, #0d0c0a);
+}
+
+.featured__content {
+  flex: 1 1 50%;
+  max-width: 520px;
+}
+
+.featured__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+}
+
+.featured__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin: 16px 0;
+}
+
+.featured__subtitle {
+  color: var(--color-dark-muted);
+  max-width: 420px;
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+.featured__captions {
+  position: relative;
+  min-height: 90px;
+  margin-bottom: 40px;
+}
+
+.featured__caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 420px;
+  line-height: 1.6;
+  color: var(--color-dark-ink);
+}
+
+.featured__meta {
+  display: flex;
+  gap: clamp(20px, 3vw, 48px);
+  flex-wrap: wrap;
+  border-top: 1px solid var(--color-dark-line);
+  padding-top: 20px;
+}
+
+.featured__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.featured__meta-item span {
+  color: var(--color-dark-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 899px) {
+  .featured {
+    min-height: auto;
+  }
+  .featured__sticky {
+    position: static;
+    height: auto;
+    flex-direction: column;
+    padding: 100px var(--gutter);
+  }
+  .featured__media {
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+  .featured__captions {
+    position: static;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .featured__caption {
+    position: static;
+  }
+}

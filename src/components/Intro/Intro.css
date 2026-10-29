@@ -1,0 +1,26 @@
+.intro {
+  padding: clamp(100px, 16vw, 200px) var(--gutter);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro__index {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-bottom: 24px;
+}
+
+.intro__text {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4.2vw, 3.2rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.intro__word {
+  display: inline-block;
+  color: var(--color-ink);
+}

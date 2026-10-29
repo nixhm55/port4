@@ -1,0 +1,108 @@
+.approach {
+  padding: clamp(80px, 10vw, 160px) var(--gutter);
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.approach__top {
+  max-width: 760px;
+  margin-bottom: clamp(50px, 8vw, 100px);
+}
+
+.approach__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.approach__statement {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+  line-height: 1.35;
+}
+
+.approach__statement-word {
+  display: inline-block;
+}
+
+.approach__list {
+  border-top: 1px solid var(--color-line);
+}
+
+.approach__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  padding: clamp(20px, 3vw, 32px) 0;
+  border-bottom: 1px solid var(--color-line);
+  gap: 20px;
+  overflow: hidden;
+}
+
+.approach__row-line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--color-ink);
+  transform: scaleX(0);
+}
+
+.approach__row-index {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.approach__row-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.6vw, 2rem);
+  transition: transform 0.4s var(--ease-out);
+}
+
+.approach__row-note {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  max-width: 320px;
+  justify-self: end;
+  text-align: right;
+}
+
+.approach__row:hover .approach__row-title {
+  transform: translateX(10px);
+}
+
+.approach__row.is-open .approach__row-title {
+  transform: translateX(10px);
+}
+
+.approach__row:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 6px;
+}
+
+@media (max-width: 720px) {
+  .approach__row {
+    grid-template-columns: 36px 1fr;
+  }
+  .approach__row-note {
+    display: none;
+  }
+
+  .approach__row.is-open .approach__row-note {
+    display: block;
+    grid-column: 2;
+    justify-self: start;
+    max-width: none;
+    margin-top: -8px;
+    text-align: left;
+  }
+}
